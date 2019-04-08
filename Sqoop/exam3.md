@@ -1,5 +1,5 @@
 
-##데이터를 hdfs 로 저장
+## table 로부터  hdfs에 저장
 <pre><code>
 [training@localhost sqoop import
 --connect jdbc:mysql://localhost/loudacre
@@ -89,8 +89,10 @@ Note: Recompile with -Xlint:deprecation for details.
 		Bytes Written=1350990
 19/04/07 23:18:57 INFO mapreduce.ImportJobBase: Transferred 1.2884 MB in 35.4198 seconds (37.2483 KB/sec)
 19/04/07 23:18:57 INFO mapreduce.ImportJobBase: Retrieved 92416 records.
+</pre></code>
 
-
+## avro  실행
+<pre><code>
 avro-tools tojson hdfs://localhost/loudacre/accounts/CA/part-m-00000.avro | tail
 log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
 log4j:WARN Please initialize the log4j system properly.
@@ -147,6 +149,4 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 {"acct_num":{"int":129757},"first_name":{"string":"John"},"last_name":{"string":"McCall"}}
 {"acct_num":{"int":129758},"first_name":{"string":"Robert"},"last_name":{"string":"Pitt"}}
 {"acct_num":{"int":129760},"first_name":{"string":"Zola"},"last_name":{"string":"Tedder"}}
-
-
 </pre></code>

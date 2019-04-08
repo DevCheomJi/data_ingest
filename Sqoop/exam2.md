@@ -87,6 +87,8 @@ Note: Recompile with -Xlint:deprecation for details.
 		Bytes Written=0
 19/04/07 23:13:03 INFO mapreduce.ImportJobBase: Transferred 1.2446 MB in 39.5385 seconds (32.2334 KB/sec)
 19/04/07 23:13:03 INFO mapreduce.ImportJobBase: Retrieved 129761 records.
+
+
 [training@localhost ~]$ parquet-tools head \
 > hdfs://localhost/loudacre/accounts/user_compressed
 acct_num = 32441
