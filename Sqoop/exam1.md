@@ -1,4 +1,4 @@
-
+<pre><code>
 [training@localhost ~]$ sqoop eval --connect jdbc:mysql://localhost/loudacre --username training --password training --query "DESC accounts"
 19/04/07 22:22:09 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0
 19/04/07 22:22:09 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
@@ -100,7 +100,7 @@ Note: Recompile with -Xlint:deprecation for details.
 
 hdfs dfs -ls /loudacre/accounts/user_info
 Found 5 items
--rw-rw-rw-   1 training supergroup          0 2019-04-07 22:30 /loudacre/accounts/user_info/_SUCCESS
+-rw-rw-rw-   1 training supergroup          0 2019-04-07 22:30 /loudacre/accounts/user_info/ SUCCESS
 -rw-rw-rw-   1 training supergroup     638090 2019-04-07 22:30 /loudacre/accounts/user_info/part-m-00000
 -rw-rw-rw-   1 training supergroup     649567 2019-04-07 22:30 /loudacre/accounts/user_info/part-m-00001
 -rw-rw-rw-   1 training supergroup     649000 2019-04-07 22:30 /loudacre/accounts/user_info/part-m-00002
@@ -316,3 +316,4 @@ Janessa	Lewis
 129759	Deborah	Hutchings
 129760	Zola	Tedder
 129761	Ruth	Ebersole
+</pre></code>
