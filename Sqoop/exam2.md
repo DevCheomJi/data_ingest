@@ -1,6 +1,14 @@
 
 # table 로부터  hdfs에 저장
-[training@localhost ~]$ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --password training --table accounts --target-dir /loudacre/accounts/user_compressed --columns "acct_num, first_name, last_name" --fields-terminated-by "\t" --as-parquetfile --compression-codec org.apache.hadoop.io.compress.SnappyCodec
+<pre><code>
+[training@localhost ~]$ sqoop import
+--connect jdbc:mysql://localhost/loudacre
+--username training --password training --table accounts
+--target-dir /loudacre/accounts/user_compressed
+--columns "acct_num, first_name, last_name"
+--fields-terminated-by "\t"
+--as-parquetfile
+--compression-codec org.apache.hadoop.io.compress.SnappyCodec
 
 
 
@@ -100,3 +108,6 @@ last_name = Pinder
 acct_num = 32445
 first_name = Melissa
 last_name = Carlson
+
+
+</pre></code>

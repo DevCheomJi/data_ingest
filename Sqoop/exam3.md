@@ -1,5 +1,16 @@
 
-[training@localhost sqoop import --connect jdbc:mysql://localhost/loudacre --username training --password training --table accounts --where "state='CA'" --columns "acct_num, first_name, last_name" --fields-terminated-by "\t" --target-dir /loudacre/accounts/CA --as-avrodatafile --compression-codec org.apache.hadoop.io.compress.SnappyCodec
+<pre><code>
+[training@localhost sqoop import
+--connect jdbc:mysql://localhost/loudacre
+--username training
+--password training
+--table accounts
+--where "state='CA'"
+--columns "acct_num, first_name, last_name"
+--fields-terminated-by "\t"
+--target-dir /loudacre/accounts/CA
+--as-avrodatafile
+--compression-codec org.apache.hadoop.io.compress.SnappyCodec
 
 
 19/04/07 23:18:17 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0
@@ -135,3 +146,6 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 {"acct_num":{"int":129757},"first_name":{"string":"John"},"last_name":{"string":"McCall"}}
 {"acct_num":{"int":129758},"first_name":{"string":"Robert"},"last_name":{"string":"Pitt"}}
 {"acct_num":{"int":129760},"first_name":{"string":"Zola"},"last_name":{"string":"Tedder"}}
+
+
+</pre></code>

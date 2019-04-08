@@ -1,5 +1,8 @@
 <pre><code>
-[training@localhost ~]$ sqoop eval --connect jdbc:mysql://localhost/loudacre --username training --password training --query "DESC accounts"
+[training@localhost ~]$ sqoop eval --connect jdbc:mysql://localhost/loudacre
+--username training --password training --query "DESC accounts"
+
+
 19/04/07 22:22:09 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0
 19/04/07 22:22:09 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.
 19/04/07 22:22:09 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
