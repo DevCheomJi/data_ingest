@@ -1,5 +1,5 @@
 
-# table 로부터  hdfs에 저장
+## table 로부터  hdfs에 저장
 <pre><code>
 [training@localhost ~]$ sqoop import
 --connect jdbc:mysql://localhost/loudacre

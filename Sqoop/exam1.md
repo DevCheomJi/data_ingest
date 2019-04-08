@@ -1,4 +1,5 @@
 <pre><code>
+## table 로부터  hdfs에 저장
 [training@localhost ~]$ sqoop eval --connect jdbc:mysql://localhost/loudacre
 --username training --password training --query "DESC accounts"
 
@@ -24,7 +25,14 @@
 ---------------------------------------------------------------------------------------------------------
 
 
-[training@localhost ~]$ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --password training --table accounts --target-dir /loudacre/accounts/user_info --columns "acct_num, first_name, last_name" --fields-terminated-by "\t"
+[training@localhost ~]$ sqoop import
+--connect jdbc:mysql://localhost/loudacre
+--username training
+--password training
+--table accounts
+--target-dir /loudacre/accounts/user_info
+--columns "acct_num, first_name, last_name"
+--fields-terminated-by "\t"
 
 19/04/07 22:30:19 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0
 19/04/07 22:30:19 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using -P instead.

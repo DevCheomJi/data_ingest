@@ -1,4 +1,5 @@
 
+##데이터를 hdfs 로 저장
 <pre><code>
 [training@localhost sqoop import
 --connect jdbc:mysql://localhost/loudacre
