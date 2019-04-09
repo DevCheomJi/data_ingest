@@ -34,6 +34,7 @@ Created topic "weblogs".
 You can now perform the Send Web Server Log Messages from Apache Flume to Apache Kafka exercise.
 
 ## Run the Flume Agent
+<pre><code>
 [training@localhost ~]$ flume-ng agent
 --conf /etc/flume-ng/conf
 --conf-file $DEVSH/exercises/flafka/spooldir_kafka.conf
@@ -47,8 +48,10 @@ Info: Excluding /usr/lib/hadoop/lib/slf4j-log4j12.jar from classpath
 Info: Including HBASE libraries found via (/usr/bin/hbase) for HBASE ac
 
 .............
+</code></pre>
 
 ## Test the Flume Agent Kafka Sink
+<pre><code>
 [training@localhost ~]$ kafka-console-consumer
 --zookeeper localhost:2181
 --topic weblogs
@@ -60,7 +63,7 @@ Info: Including HBASE libraries found via (/usr/bin/hbase) for HBASE ac
 /flume/weblogs_spooldir exists and is not empty, delete contents? (y/n)
 y
 Copying and moving files to /flume/weblogs_spooldir
-
+</code></pre>
 
 ## Kafka Consumer 에서 동작
 <pre><code>
