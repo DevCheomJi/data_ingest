@@ -1,5 +1,6 @@
 
-#Creating a Kafka Topic
+##bigdata engineering  교육 2차시 수강생:정수현
+##Creating a Kafka Topic
 <pre><code>
 
 
@@ -17,9 +18,10 @@ Topic:weblogs	PartitionCount:1	ReplicationFactor:1	Configs:
 	Topic: weblogs	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
 </code></pre>
 
+<img src="https://github.com/pjpjpjq/data_ingest/blob/master/Kafka/weblogs.JPG?raw=true"></img>
 
 
-#Producing and Consuming Messages
+##Producing and Consuming Messages
 <pre><code>
 
 [training@localhost ~]$ kafka-console-producer \
@@ -39,3 +41,6 @@ test weblog entry 1
 test weblog entry 2
 
 </code></pre>
+
+<img src="https://github.com/pjpjpjq/data_ingest/blob/master/Kafka/consumer.JPG?raw=true"></img>
+<img src="https://github.com/pjpjpjq/data_ingest/blob/master/Kafka/weblogs2.JPG?raw=true"></img>

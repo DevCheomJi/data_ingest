@@ -1,3 +1,4 @@
+##bigdata engineering  교육 2차시 수강생:정수현
 <pre><code>
 ## table 로부터  hdfs에 저장
 [training@localhost ~]$ sqoop eval --connect jdbc:mysql://localhost/loudacre
