@@ -1,4 +1,4 @@
-##bigdata engineering  교육 2차시 수강생:정수현
+## bigdata engineering  교육 2차시 수강생:정수현
 
 $DEVSH/scripts/catchup.sh
 
@@ -33,7 +33,7 @@ Created topic "weblogs".
 
 You can now perform the Send Web Server Log Messages from Apache Flume to Apache Kafka exercise.
 
-##Run the Flume Agent
+## Run the Flume Agent
 [training@localhost ~]$ flume-ng agent
 --conf /etc/flume-ng/conf
 --conf-file $DEVSH/exercises/flafka/spooldir_kafka.conf
@@ -48,7 +48,7 @@ Info: Including HBASE libraries found via (/usr/bin/hbase) for HBASE ac
 
 .............
 
-##Test the Flume Agent Kafka Sink
+## Test the Flume Agent Kafka Sink
 [training@localhost ~]$ kafka-console-consumer
 --zookeeper localhost:2181
 --topic weblogs
@@ -63,6 +63,7 @@ Copying and moving files to /flume/weblogs_spooldir
 
 
 ## Kafka Consumer 에서 동작
+<pre><code>
 234.178.182.138 - 183 [15/Mar/2014:00:01:46 +0100] "GET /KBDOC-00044.html HTTP/1.0" 200 3728 "http://www.loudacre.com"  "Loudacre CSR Browser"
 234.178.182.138 - 183 [15/Mar/2014:00:01:46 +0100] "GET /theme.css HTTP/1.0" 200 671 "http://www.loudacre.com"  "Loudacre CSR Browser"
 17.47.5.64 - 11435 [15/Mar/2014:00:01:37 +0100] "GET /KBDOC-00026.html HTTP/1.0" 200 15817 "http://www.loudacre.com"  "Loudacre Mobile Browser iFruit 1"
@@ -73,3 +74,4 @@ Copying and moving files to /flume/weblogs_spooldir
 227.1.159.172 - 9 [15/Mar/2014:00:01:16 +0100] "GET /theme.css HTTP/1.0" 200 16316 "http://www.loudacre.com"  "Loudacre CSR Browser"
 22.252.151.164 - 23251 [15/Mar/2014:00:00:30 +0100] "GET /KBDOC-00150.html HTTP/1.0" 200 19203 "http://www.loudacre.com"  "Loudacre Mobile Browser Sorrento F11L"
 22.252.151.164 - 23251 [15/Mar/2014:00:00:30 +0100] "GET /theme.css HTTP/1.0" 200 10684 "http://www.loudacre.com"  "Loudacre Mobile Browser Sorrento F11L"
+</code></pre>
